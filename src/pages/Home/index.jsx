@@ -1,8 +1,16 @@
+import React, { useState, useEffect } from 'react'
+
 import './styles.css'
 
 import { Card } from '../../components/Card'
+import { packageList } from '../../constants/packages'
 
 export function Home() {
+
+    const [ packages, setPackages ] = useState()
+
+    useEffect(() => setPackages(packageList))
+
     return (
         <>
             <header>
@@ -10,9 +18,17 @@ export function Home() {
                 <h2>Conheça nossas soluções e escolha o plano ideal para o seu próximo projeto</h2>
             </header>
             <main>
-                <Card name={'Free'} price={0} description={'Lorem ipsum'} benefits={""} />
-                <Card name={'Free'} price={0} description={'Lorem ipsum'} benefits={""} />
-                <Card name={'Free'} price={0} description={'Lorem ipsum'} benefits={""} />
+                {
+                    packages?.map(pckg => 
+                        <Card
+                            key={pckg.name}
+                            name={pckg.name}
+                            price={pckg.price}
+                            description={pckg.description}
+                            benefits={pckg.benefits}
+                        />
+                    )
+                }
             </main>
         </>
     )
