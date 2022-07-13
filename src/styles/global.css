@@ -1,0 +1,41 @@
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
+
+html * {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: linear-gradient(var(--blue) 0 50%, var(--page-background) 50% 100%);
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+h1, h2 {
+    max-width: 553px;
+    text-align: center;
+    color: #fff;
+}
