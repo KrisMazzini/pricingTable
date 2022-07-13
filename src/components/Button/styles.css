@@ -21,13 +21,20 @@ button p {
     line-height: 25px;
 }
 
-button:hover {
+.card.popular button {
     background-color: var(--blue);
-    transition: var(--transition);
     color: #fff;
 }
 
+button:hover, .card.popular button:hover {
+    background-color: var(--black);
+    border-color: var(--black);
+    color: #fff;
+
+    transition: var(--transition);
+}
+
 button:active {
-    filter: brightness(0.8);
+    filter: brightness(0.4);
     transition: none;
 }
