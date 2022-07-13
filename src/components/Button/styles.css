@@ -1,4 +1,4 @@
-button {
+button, main:hover > .card.popular:not(:hover) button {
     width: 296px;
     height: 49px;
 
@@ -12,6 +12,8 @@ button {
 
     background-color: #fff;
     color: var(--blue);
+
+    transition: var(--transition);
 }
 
 button p {
@@ -21,20 +23,16 @@ button p {
     line-height: 25px;
 }
 
-.card.popular button {
+.card:hover button, .card.popular button {
     background-color: var(--blue);
     color: #fff;
 }
 
-button:hover, .card.popular button:hover {
-    background-color: var(--black);
-    border-color: var(--black);
-    color: #fff;
-
-    transition: var(--transition);
+button:hover {
+    filter: brightness(1.2);
+    transition: none;
 }
 
 button:active {
-    filter: brightness(0.4);
-    transition: none;
+    filter: brightness(0.9);
 }
