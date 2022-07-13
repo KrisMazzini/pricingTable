@@ -2,7 +2,10 @@
     --yellow: #ffcc29;
     --blue: #1d539e;
     --gray: #828799;
+    --light-gray: #eeeeee;
+    --black: #1e2338;
     --page-background: #f9fbfc;
+    --transition: all 200ms linear;
   }
 
 html * {
@@ -13,13 +16,21 @@ html * {
 body {
     min-height: 100vh;
 
+    padding: 10px;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
 
     background: linear-gradient(var(--blue) 0 50%, var(--page-background) 50% 100%);
     background-size: cover;
+}
+
+h1, h2 {
+    max-width: 553px;
+    text-align: center;
+    color: #fff;
 }
 
 h1 {
@@ -34,8 +45,17 @@ h2 {
     line-height: 25px;
 }
 
-h1, h2 {
-    max-width: 553px;
-    text-align: center;
-    color: #fff;
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--black);
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: var(--gray);
 }

@@ -1,0 +1,33 @@
+button {
+    width: 100%;
+    height: 49px;
+
+    margin-top: auto;
+
+    outline: none;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background-color: #fff;
+    color: var(--blue);
+}
+
+button p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+button:hover {
+    background-color: var(--blue);
+    transition: var(--transition);
+    color: #fff;
+}
+
+button:active {
+    filter: brightness(0.8);
+    transition: none;
+}
