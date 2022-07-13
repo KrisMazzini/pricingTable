@@ -11,6 +11,9 @@ export function Card({name, price, description, benefits, popular = false}) {
         <div className={cardClass} id="name">
             <header className="card-header">
                 <h3>{name}</h3>
+                {
+                    popular ? <p className="popular-tag">Popular</p> : <></>
+                }
             </header>
             <PriceTag
                 key={name}
