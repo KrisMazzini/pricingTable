@@ -12,8 +12,11 @@
     background-color: #fff;
 }
 
-.card h3 {
+.card-header {
     margin-bottom: 20px;
+}
+
+.card h3 {
     text-transform: capitalize;
 }
 

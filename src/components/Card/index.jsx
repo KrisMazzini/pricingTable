@@ -7,7 +7,9 @@ import { Button } from '../Button'
 export function Card({name, price, description, benefits}) {
     return (
         <div className="card" id="name">
-            <h3>{name}</h3>
+            <header className="card-header">
+                <h3>{name}</h3>
+            </header>
             <PriceTag
                 key={name}
                 price={price}
