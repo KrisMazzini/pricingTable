@@ -26,6 +26,7 @@ export function Home() {
                             price={pckg.price}
                             description={pckg.description}
                             benefits={pckg.benefits}
+                            popular={pckg.popular}
                         />
                     )
                 }

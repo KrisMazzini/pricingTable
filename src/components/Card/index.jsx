@@ -4,9 +4,11 @@ import { PriceTag } from '../PriceTag'
 import { Benefit } from '../Benefit'
 import { Button } from '../Button'
 
-export function Card({name, price, description, benefits}) {
+export function Card({name, price, description, benefits, popular = false}) {
+    const cardClass = popular ? "card popular" : "card"
+    
     return (
-        <div className="card" id="name">
+        <div className={cardClass} id="name">
             <header className="card-header">
                 <h3>{name}</h3>
             </header>

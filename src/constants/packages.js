@@ -1,9 +1,10 @@
 class Package {
-    constructor(packageName, price, description, benefits) {
+    constructor(packageName, price, description, benefits, popular = false) {
         this.name = packageName
         this.price = price
         this.description = description
         this.benefits = benefits
+        this.popular = popular
     }
 }
 
@@ -25,7 +26,8 @@ const basic = new Package(
         'Lorem impsum dolor sit amet',
         'Lorem impsum dolor sit amet',
         'Lorem impsum dolor sit amet'
-    ]
+    ],
+    true
 )
 
 const professional = new Package(
