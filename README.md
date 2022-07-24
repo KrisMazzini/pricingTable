@@ -6,7 +6,7 @@ They look like great deals! :)
 
 ## How to run
 
-In order to run this application: 
+Visit https://pricing-table-swart.vercel.app, or...
 
 1. clone this repository using ```git clone git@github.com:KrisMazzini/pricingTable.git``` ... or simply download the project zip;
 2. open the console at the project directory;
